@@ -1,0 +1,17 @@
+<h1 style="color:aqua"  GAME OF FLAGS > </h1>
+<div *ngIf= "total==10"><h1> game over!!! <br> your score:{{count1}}</h1>
+</div>
+<button (click) ="code1()">fire </button>
+  <div *ngIf="total==0"></div>
+    
+     <span  style="width:10em; line-height: 10em" class = "flag-icon flag-icon-{{code}}"> </span> 
+<!-- <input type="text" [(ngModel)]="text" placeholder="enter the name of the nation">  -->
+   <br>
+  <button (click)="check(1)">{{option[0]}}</button><br>
+  <button (click)="check(2)">{{option[1]}}</button><br>
+  <button (click)="check(3)">{{option[2]}}</button><br>
+  <button (click)="check(4)">{{option[3]}}</button>
+  <br>
+
+  <div>correct:{{count1}}/{{total}}</div>
+  Incorrect:{{count2}}
